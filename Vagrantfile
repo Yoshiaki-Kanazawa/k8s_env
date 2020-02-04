@@ -1,6 +1,18 @@
 # coding: utf-8
 # -*- mode: ruby -*-
 Vagrant.configure(2) do |config|
+  # プロキシ設定
+  #if Vagrant.has_plugin?("vagrant-proxyconf")
+  #  config.proxy.enabled  = true  # => true; all applications enabled, false; all applications disabled
+  #  config.proxy.http     = "http://proxy.ns-sol.co.jp:8000"
+  #  config.proxy.https    = "http://proxy.ns-sol.co.jp:8000"
+  #  config.proxy.no_proxy = "localhost,127.0.0.1,172.16.0.10,172.16.0.11,172.16.0.12,10.96.0.0/12,10.244.0.0/16,10.32.0.10"
+  #end
+
+  #if Vagrant.has_plugin?("vagrant-vbguest")
+  #  config.vbguest.auto_update = true
+  #end
+  
   # マスタ 仮想マシンの起動
   config.vm.define 'master' do |machine|
     machine.vm.box = "centos/7"
