@@ -3,19 +3,6 @@
   gather_facts: True
 
   tasks:
-  ## プロキシ設定
-  #- name: Setting http_proxy for Kubernetes
-  #  command: echo "export HTTP_PROXY=http://<プロキシサーバのIP>:<ポート>/" >> /home/vagrant/.bash_profile
-
-  #- name: Setting https_proxy for Kubernetes
-  #  command: echo "export HTTPS_PROXY=http://<プロキシサーバのIP>:<ポート>/" >> /home/vagrant/.bash_profile
-
-  #- name: Setting no_proxy for Kubernetes
-  #  command: echo "export NO_PROXY=localhost,127.0.0.1,172.16.0.10,172.16.0.11,172.16.0.12,10.96.0.0/12,10.244.0.0/16,10.32.0.10" >> /home/vagrant/.bash_profile
-
-  #- name: Apply /home/vagrant/.bash_profile
-  #  command: source /home/vagrant/.bash_profile
-
   ## yum repositoryの設定
   - name: Install yum-utils
     yum:
