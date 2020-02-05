@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
   #  config.proxy.enabled  = true  # => true; all applications enabled, false; all applications disabled
   #  config.proxy.http     = "http://proxy.ns-sol.co.jp:8000"
   #  config.proxy.https    = "http://proxy.ns-sol.co.jp:8000"
-  #  config.proxy.no_proxy = "localhost,127.0.0.1,172.16.0.10,172.16.0.11,172.16.0.12,10.96.0.0/12,10.244.0.0/16,10.32.0.10"
+  #  config.proxy.no_proxy = "localhost,127.0.0.1,172.16.20.11,172.16.20.12,172.16.20.13,10.96.0.0/12,10.244.0.0/16,10.32.0.10"
   #end
 
   #if Vagrant.has_plugin?("vagrant-vbguest")
