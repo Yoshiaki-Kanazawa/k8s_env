@@ -41,11 +41,6 @@
       group: root
       mode: 0755
 
-  - name: Docker setting option file
-    copy:
-      src: option.conf
-      dest: /etc/systemd/system/docker.service.d/option.conf
-
   - name: Start service docker, and enable service  docker
     systemd:
       name: docker.service
