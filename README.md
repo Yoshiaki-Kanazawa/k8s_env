@@ -1,5 +1,5 @@
 # k8s_env
-Automation of k8s environment construction
+Automation of k8s environment construction.
 
 k8sの環境構築をvagrantとansibleで自動化したコードです。  
 k8sノードの構成はmaster\*1、node\*2です。（Vurtualbox上のVM）
